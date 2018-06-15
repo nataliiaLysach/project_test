@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->    
+        <title>INSURE</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>  
+        <div class="wrapper">
+            <header>
+                <div class="wrapper_inner">
+                	<a href="#" class="logo_nav">
+	                	<img src="img/logo.jpg" alt="logo">
+	                </a>
+	                <ul class="list_custom">
+	                    <li class="active"><a href="#">Personal plan</a></li>
+	                    <li><a href="#">Business plan</a></li>
+	                    <li><a href="#">Guide</a></li>
+	                    <li><a href="#">Blog</a></li>
+	                </ul>
+                </div>
+            </header>
+            <div class="wrapper_inner block_main">
+            	<div class="row_border list_header">
+	                <h3>Insurance list:</h3>
+	                <div class="button_group">
+	                	<button onclick="listView()" class="button_switch"><i class="fa fa-bars"></i></button> 
+	                	<button onclick="gridView()" class="button_switch"><i class="fa fa-th-large"></i></button>
+	            	</div> 
+	            </div>
+	            
+	            <table id="table">
+				  	<thead class="table_row_header">
+					    <tr>
+					      <th>company</th>
+					      <th>covering</th>
+					      <th>type</th>
+					      <th>metal level</th>
+					      <th>drugs</th>
+					      <th>primary<br>care visits</th>
+					      <th>yearly<br> deductible</th>
+					      <th>price</th>
+					      <th></th>
+					    </tr>
+				  	</thead>
+				  	<tbody>
+					    <tr>
+						    <td>
+						    	<div class="company_name">
+						    		<img src="img/img_1.jpg" alt="logo">
+						    		<div >
+						    			<div>
+							    			Insurcom
+						    			</div>
+						    			<div>
+						    				<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+						    			</div>
+						    		</div>
+						    	</div>
+						    </td>
+						    <td>Health</td>
+						    <td>PPO <i class="fa fa-question"></i></td>
+						    <td><i class="fa platinum fa-circle"></i> Platinum <i class="fa fa-question"></i></td>
+						    <td>$15</td>
+						    <td>$75</td>
+						    <td>$6000</td>
+						    <td>$365/mon</td>
+						    <td>
+						    	<button class="button_white">OVERVIEW</button> 
+		                    	<button class="button_blue">BUY</button>
+						    </td>
+					    </tr>
+					    <tr>
+					      	<td>
+					      		<div class="company_name">
+						    		<img src="img/img_2.jpg" alt="logo">
+						    		<div >
+						    			<div>
+							    			Health Ins
+						    			</div>
+						    			<div>
+						    				<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star grey" aria-hidden="true"></i>
+									    	<i class="fa fa-star grey" aria-hidden="true"></i>
+						    			</div>
+						    		</div>
+						    	</div>
+					      	</td>
+					      	<td>All-in-one</td>
+					      	<td>HMO <i class="fa fa-question"></i></td>
+					      	<td><i class="fa silver fa-circle"></i> Silver <i class="fa fa-question"></i></td>
+					      	<td>100%</td>
+					      	<td>$45</td>
+					      	<td>$4500</td>
+					      	<td>$611/mon</td>
+					      	<td>
+					      		<button class="button_white">OVERVIEW</button> 
+		                    	<button class="button_blue">BUY</button>
+					      	</td>
+					    </tr>
+					    <tr>
+						    <td>
+						    	<div class="company_name">
+						    		<img src="img/img_1.jpg" alt="logo">
+						    		<div >
+						    			<div>
+							    			Insurcom
+						    			</div>
+						    			<div>
+						    				<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+						    			</div>
+						    		</div>
+						    	</div>
+						    </td>
+						    <td>Health</td>
+						    <td>PPO <i class="fa fa-question"></i></td>
+						    <td><i class="fa platinum fa-circle"></i> Platinum <i class="fa fa-question"></i></td>
+						    <td>$15</td>
+						    <td>$75</td>
+						    <td>$6000</td>
+						    <td>$365/mon</td>
+						    <td>
+						    	<button class="button_white">OVERVIEW</button> 
+		                    	<button class="button_blue">BUY</button>
+						    </td>
+					    </tr>
+					    <tr>
+					      	<td>
+					      		<div class="company_name">
+						    		<img src="img/img_2.jpg" alt="logo">
+						    		<div >
+						    			<div>
+							    			Health Ins
+						    			</div>
+						    			<div>
+						    				<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star grey" aria-hidden="true"></i>
+									    	<i class="fa fa-star grey" aria-hidden="true"></i>
+						    			</div>
+						    		</div>
+						    	</div>
+					      	</td>
+					      	<td>All-in-one</td>
+					      	<td>HMO <i class="fa fa-question"></i></td>
+					      	<td><i class="fa silver fa-circle"></i> Silver <i class="fa fa-question"></i></td>
+					      	<td>100%</td>
+					      	<td>$45</td>
+					      	<td>$4500</td>
+					      	<td>$611/mon</td>
+					      	<td>
+					      		<button class="button_white">OVERVIEW</button> 
+		                    	<button class="button_blue">BUY</button>
+					      	</td>
+					    </tr>
+					    <tr>
+						    <td>
+						    	<div class="company_name">
+						    		<img src="img/img_1.jpg" alt="logo">
+						    		<div >
+						    			<div>
+							    			Insurcom
+						    			</div>
+						    			<div>
+						    				<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+						    			</div>
+						    		</div>
+						    	</div>
+						    </td>
+						    <td>Health</td>
+						    <td>PPO <i class="fa fa-question"></i></td>
+						    <td><i class="fa platinum fa-circle"></i> Platinum <i class="fa fa-question"></i></td>
+						    <td>$15</td>
+						    <td>$75</td>
+						    <td>$6000</td>
+						    <td>$365/mon</td>
+						    <td>
+						    	<button class="button_white">OVERVIEW</button> 
+		                    	<button class="button_blue">BUY</button>
+						    </td>
+					    </tr>
+					    <tr>
+					      	<td>
+					      		<div class="company_name">
+						    		<img src="img/img_2.jpg" alt="logo">
+						    		<div >
+						    			<div>
+							    			Health Ins
+						    			</div>
+						    			<div>
+						    				<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star grey" aria-hidden="true"></i>
+									    	<i class="fa fa-star grey" aria-hidden="true"></i>
+						    			</div>
+						    		</div>
+						    	</div>
+					      	</td>
+					      	<td>All-in-one</td>
+					      	<td>HMO <i class="fa fa-question"></i></td>
+					      	<td><i class="fa silver fa-circle"></i> Silver <i class="fa fa-question"></i></td>
+					      	<td>100%</td>
+					      	<td>$45</td>
+					      	<td>$4500</td>
+					      	<td>$611/mon</td>
+					      	<td>
+					      		<button class="button_white">OVERVIEW</button> 
+		                    	<button class="button_blue">BUY</button>
+					      	</td>
+					    </tr>
+					    <tr>
+						    <td>
+						    	<div class="company_name">
+						    		<img src="img/img_1.jpg" alt="logo">
+						    		<div >
+						    			<div>
+							    			Insurcom
+						    			</div>
+						    			<div>
+						    				<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+						    			</div>
+						    		</div>
+						    	</div>
+						    </td>
+						    <td>Health</td>
+						    <td>PPO <i class="fa fa-question"></i></td>
+						    <td><i class="fa platinum fa-circle"></i> Platinum <i class="fa fa-question"></i></td>
+						    <td>$15</td>
+						    <td>$75</td>
+						    <td>$6000</td>
+						    <td>$365/mon</td>
+						    <td>
+						    	<button class="button_white">OVERVIEW</button> 
+		                    	<button class="button_blue">BUY</button>
+						    </td>
+					    </tr>
+					    <tr>
+					      	<td>
+					      		<div class="company_name">
+						    		<img src="img/img_2.jpg" alt="logo">
+						    		<div >
+						    			<div>
+							    			Health Ins
+						    			</div>
+						    			<div>
+						    				<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star yellow" aria-hidden="true"></i>
+									    	<i class="fa fa-star grey" aria-hidden="true"></i>
+									    	<i class="fa fa-star grey" aria-hidden="true"></i>
+						    			</div>
+						    		</div>
+						    	</div>
+					      	</td>
+					      	<td>All-in-one</td>
+					      	<td>HMO <i class="fa fa-question"></i></td>
+					      	<td><i class="fa silver fa-circle"></i> Silver <i class="fa fa-question"></i></td>
+					      	<td>100%</td>
+					      	<td>$45</td>
+					      	<td>$4500</td>
+					      	<td>$611/mon</td>
+					      	<td>
+					      		<button class="button_white">OVERVIEW</button> 
+		                    	<button class="button_blue">BUY</button>
+					      	</td>
+					    </tr>
+				  	</tbody>
+				</table>
+            </div>
+            
+            <footer >
+                <div class="wrapper_inner">
+                	<span>INSURE. All right reserved 2017</span>
+	                <ul>
+	                    <li><a href="#">Personal plan</a></li>
+	                    <li><a href="#">Business plan</a></li>
+	                    <li><a href="#">Guide</a></li>
+	                    <li><a href="#">Blog</a></li>
+	                </ul>
+                </div>
+            </footer>
+        </div>
+        <script>
+        	// List View
+			function listView() {
+			  	var element = document.getElementById("table");
+			  	element.classList.remove("gridViewActive");
+			}
+
+			// Grid View
+			function gridView() {
+			  	var element = document.getElementById("table");
+			  	element.classList.add("gridViewActive");
+			}
+        </script>
+    </body>
+</html>
